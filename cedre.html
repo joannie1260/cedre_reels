@@ -1,0 +1,138 @@
+<div class="formCedar">
+    <div class="container">
+        <!-- STEP 1 -->
+        <!-- Get cedar Type -->
+        <div class="section-title">
+            <h2>Étape 1 - Sélectionnez votre type de cèdres</h2>
+            <div class="step1">
+                <div class="section1" onclick="activateSection(this); showContent('content1')">
+                    <img src="https://beausite.qc.ca/dev2016/wp-content/uploads/2023/04/semi-cultivé.png" alt="" srcset="">
+                    <p>SEMI-CULTIVÉS</p>
+                  </div>
+
+                <div class="section1" onclick="activateSection(this); showContent('content2')">
+                    <img src="https://beausite.qc.ca/dev2016/wp-content/uploads/2023/04/NIgras.png" alt="" srcset="">
+                    <p>NIGRAS CULTIVÉS</p>
+                </div>
+
+                <div class="section1" onclick="activateSection(this); showContent('content3')">
+                    <img src="https://beausite.qc.ca/dev2016/wp-content/uploads/2023/04/Fastigiata.png" alt="" srcset="">
+                    <p>FASTIGIATA</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <!-- Get linear feet -->
+<div class="flex-content">
+        <div class="linearFeet">
+            <h2>Étape 2 - Indiquez le nombre de pieds linéaires de votre projet</h2><br>
+            <input type="number" name="linearFeet" id="linearFeet" pattern="[0-9]+" title="Veuillez entrer un nombre entier positif" required="">
+        </div>
+
+        <!-- STEP 3 -->
+        <!-- Get Height -->
+
+        <div class="step2">
+            <div id="content1" class="content section2">
+                <h2>Étape 3 - Sélectionnez la hauteur de vos cèdres semi-cultivés en pieds</h2>
+                <div class="inputs">
+                    <div class="input">
+                        <input type="radio" name="sauvages-height" value="3" id="threeSauv">
+                        <label for="sauvages">3</label><br>
+                    </div>
+                    <div class="input">
+                        <input type="radio" name="sauvages-height" value="4" id="fourSAuv">
+                        <label for="sauvages">4</label><br>
+                    </div>
+                    <div class="input">
+                        <input type="radio" name="sauvages-height" value="5" id="fiveSAuv">
+                        <label for="sauvages">5</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content2" class="content section2">
+                <h2>Étape 3 - Sélectionnez la hauteur de vos cèdres Nigras cultivés en pieds</h2>
+                <div class="inputs">
+
+                    <div class="input">
+                        <input type="radio" name="nigras-height" value="3" id="three">
+                        <label for="nigras">3</label><br>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" name="nigras-height" value="4" id="four">
+                        <label for="nigras">4</label><br>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" name="nigras-height" value="5" id="five">
+                        <label for="nigras">5</label><br>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" name="nigras-height" value="6" id="six">
+                        <label for="nigras">6</label><br>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" name="nigras-height" value="7" id="seven">
+                        <label for="nigras">7</label><br>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" name="nigras-height" value="8" id="eight">
+                        <label for="nigras">8</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content3" class="content section2">
+                <h2>Étape 3 - Sélectionnez la hauteur de vos cèdres Fastigiata en pieds</h2>
+                <div class="inputs">
+                    <div class="input">
+                        <input type="radio" name="fasti-height" value="3" id="three">
+                        <label for="fastigiata">3</label><br>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" name="fasti-height" value="4" id="four">
+                        <label for="fastigiata">4</label><br>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" name="fasti-height" value="5" id="five">
+                        <label for="fastigiata">5</label><br>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" name="fasti-height" value="6" id="six">
+                        <label for="fastigiata">6</label><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+        <!-- STEP 4 -->
+        <!-- Calcul soumission -->
+        <button onclick="calculer();">Calculer soumission</button>
+
+        <!-- SHOW SOUMISSION RESULT -->
+        <div class="container-resultat">
+
+            <div class="prix-soumission">
+                <div id="resultat"></div>
+            </div>
+
+            <div class="cedar-picture">
+                <div id="cedar-picture"></div>
+            </div>
+
+            <p>* La plantation de haie de cèdres inclus: la tranchée, la fertilisation, la main d'oeuvre, les végétaux et le transport. Garantie 2 ans si nous faisons l'entretien suite à la plantation.</p>
+        </div>
+<br>
+<br>
+  <button id="sendForm" onclick="openSecondPage();">Envoyer ma soumission</button>
+</div>
+</div>

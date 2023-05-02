@@ -185,7 +185,6 @@ function calculer() {
 
     let prix = prixCedar * linearFeet;
 
-    setSoumissionPrice(prix);
     setSoumissionLinearFeet(linearFeet);
 
     var resultDiv = document.getElementById("cedar-picture");
@@ -208,7 +207,6 @@ function openSecondPage() {
     let baseUrl = "https://beausite.qc.ca/envoyer-demande-de-estimation-de-soumission-en-ligne/";
     window.location.href = baseUrl;
 }
-
 
 /* 
     Config display content
